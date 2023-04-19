@@ -1,0 +1,15 @@
+.item {
+  width: 100%;
+  padding: 0px 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  @media (max-width: 1000px) {
+    padding: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+}

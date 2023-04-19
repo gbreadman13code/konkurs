@@ -1,0 +1,8 @@
+{
+  "short_name": "Институт города | Конкурс",
+  "name": "Институт города | Информация о конкурсе",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

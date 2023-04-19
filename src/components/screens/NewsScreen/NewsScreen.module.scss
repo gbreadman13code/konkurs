@@ -1,0 +1,11 @@
+.wrap {
+  margin-bottom: 80px;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+}

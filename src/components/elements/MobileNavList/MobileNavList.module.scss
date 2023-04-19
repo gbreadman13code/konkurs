@@ -1,0 +1,73 @@
+.wrap {
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  background-color: #fff;
+  z-index: 3;
+
+  transition: 0.3s;
+  transform: translateX(100%);
+
+  padding: 30px 0;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+
+    p {
+      font-size: 17px;
+      line-height: 18px;
+      font-family: "Myriad Pro Bold";
+      color: #004669;
+
+      text-transform: uppercase;
+      width: 80%;
+    }
+  }
+
+  .content {
+    position: relative;
+    svg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    list-style: none;
+
+    padding-top: 50px;
+    padding-bottom: 180px;
+
+    li {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        font-size: 23px;
+        color: #004669;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

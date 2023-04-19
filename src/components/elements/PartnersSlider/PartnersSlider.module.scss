@@ -1,0 +1,18 @@
+.item {
+  width: 100%;
+  // padding: 0px 20px;
+  // display: flex;
+  // align-items: center;
+
+  img {
+    width: 80%;
+    // margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+
+    @media (max-width: 1000px) {
+      height: 112px !important;
+      width: 112px !important;
+    }
+  }
+}

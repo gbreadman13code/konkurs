@@ -1,0 +1,95 @@
+.wrap {
+  position: relative;
+  padding-top: 50px;
+
+  @media (max-width: 1000px) {
+    padding-top: 30px;
+  }
+
+  .blue_decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .grey_decor {
+    width: calc(40%);
+    z-index: -1;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  h2 {
+    border-bottom: 2px solid #004669;
+    width: min-content;
+    margin-bottom: 60px;
+    margin-top: 0;
+
+    white-space: nowrap;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .content {
+    display: flex;
+    gap: 80px;
+
+    @media (max-width: 1000px) {
+      flex-direction: column-reverse;
+      gap: 28px;
+    }
+
+    .text {
+      width: 60%;
+      font-size: 24px;
+      line-height: 26px;
+      color: #004669;
+      padding-left: 40px;
+      margin-bottom: 90px;
+
+      position: relative;
+
+      white-space: pre-wrap;
+
+      @media (max-width: 1000px) {
+        width: 100%;
+        padding-left: 0;
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #cc2229;
+        position: absolute;
+        top: 8px;
+        left: 0;
+
+        @media (max-width: 1000px) {
+          display: none;
+        }
+      }
+    }
+    .slider {
+      width: 40%;
+      @media (max-width: 1000px) {
+        width: 100%;
+        position: relative;
+
+        svg.blue_decor_mobile {
+          position: absolute;
+          bottom: -18px;
+          right: -25px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}

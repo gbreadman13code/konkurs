@@ -1,0 +1,27 @@
+.wrap {
+  margin-bottom: 80px;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  position: relative;
+  h2 {
+    margin: 0;
+    color: #ffffff !important;
+  }
+
+  .head_wrapper {
+    margin-bottom: 65px;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

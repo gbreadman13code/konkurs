@@ -1,0 +1,113 @@
+.item {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+  overflow-y: hidden;
+
+  position: relative;
+
+  @media (max-width: 1000px) {
+    padding-left: 0;
+    margin-bottom: 0px;
+
+    &:last-child {
+      margin-bottom: 80px;
+    }
+  }
+
+  div.head_wrap {
+    width: 100%;
+    z-index: 2;
+    background-color: #ffffff;
+
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &:hover {
+      p {
+        border-bottom: 2px solid #004669;
+      }
+    }
+
+    p {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 26px;
+      color: #004669;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 15px;
+      padding-bottom: 3px;
+
+      position: relative;
+      border-bottom: 2px solid transparent;
+
+      transition: 0.2s;
+
+      @media (max-width: 1000px) {
+        margin-left: 30px;
+        font-size: 16px;
+        line-height: 18px;
+        padding-bottom: 0;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #d9d9d9;
+
+        position: absolute;
+        top: calc(50% - 5px);
+        left: -30px;
+        border-radius: 50%;
+
+        @media (max-width: 1000px) {
+          background-color: #6b859e;
+          left: -30px;
+          top: calc(50% - 3px);
+          width: 6px;
+          height: 6px;
+        }
+      }
+
+      &.active {
+        border-bottom: 2px solid #cc2229;
+        box-sizing: border-box;
+        &::before {
+          background-color: #cc2229;
+        }
+      }
+    }
+  }
+
+  div.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    span {
+      z-index: 1;
+      font-weight: 400;
+      font-size: 0;
+      transition: 0.1s ease-in-out;
+      font-size: 24px;
+      line-height: 26px;
+      color: #004669;
+      transition: 0.2s;
+
+      white-space: pre-wrap;
+
+      @media (max-width: 1000px) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      &.active {
+      }
+    }
+  }
+}
